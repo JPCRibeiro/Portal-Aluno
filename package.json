@@ -1,6 +1,7 @@
 {
   "name": "portal-aluno",
   "version": "0.1.0",
+  "homepage": "https://portal-aluno-liart.vercel.app/login",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",

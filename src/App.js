@@ -1,6 +1,6 @@
 import './CssGlobal.css';
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./pages/login/Login"
 import Inicio from "./pages/inicio/Inicio";
 import Requerimento from "./pages/requerimento/Requerimento";
@@ -13,7 +13,7 @@ export default function App() {
     <Router>
         <Routes basename="/login">
           <Route exact path="/login" element={<Login/>}/>
-          <Route path="/" element={<Inicio/>}/>
+          <Route path="/" element={<Navigate to="/login" replace/>}/>
           <Route path="/boletim" element={<Boletim/>}/>
           <Route path="/requerimento" element={<Requerimento/>}/>
           <Route path="/biblioteca" element={<Biblioteca/>}/>
