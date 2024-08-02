@@ -20,7 +20,7 @@ export default function NotFound() {
         <div className={styles.mainWrapper}>
           <h1>Página não Encontrada!</h1>
           <p>Volte para a página principal</p>
-          <Link to="/">Voltar</Link>
+          <Link to="/inicio">Voltar</Link>
         </div>
       </main>
       <Footer/>
