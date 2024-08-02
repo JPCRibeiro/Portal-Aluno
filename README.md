@@ -1,5 +1,5 @@
 <div align='center'>
-  <a align='center' href="https://jpcribeiro.github.io/Portal/" target="blank"><img align="center" src="public/book-logo.svg" height="60" /></a>
+  <a align='center' href="https://jpcribeiro-portal-aluno.vercel.app/" target="blank"><img align="center" src="public/book-logo.svg" height="60" /></a>
 </div>
 
 <h1 align='center'>
@@ -15,5 +15,5 @@
 </div>
 
 <div align="center">
-  Acesse o <a align='center' href="https://jpcribeiro.github.io/Portal/" target="_blank">Projeto</a>
+  Acesse o <a align='center' href="https://jpcribeiro-portal-aluno.vercel.app/" target="_blank">Projeto</a>
 </div>
