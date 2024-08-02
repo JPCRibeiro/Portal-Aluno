@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Header from "../../components/header/Header";
 import Sidenav from "../../components/sidebar/Sidebar";
 import Footer from "../../components/footer/Footer";
@@ -9,6 +9,7 @@ import Graph from '@mui/icons-material/EqualizerRounded';
 
 export default function Inicio() {
   const location = useLocation();
+  const navigate = useNavigate();
   const username = localStorage.getItem("username");
 
   useEffect(() => {
