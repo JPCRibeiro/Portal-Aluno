@@ -13,7 +13,11 @@ export default function Inicio() {
 
   useEffect(() => {
     document.title = "Página Inicial | Portal do Aluno";
-  }, [location]);
+
+    if (!username) {
+      navigate('/login'); 
+    }
+  }, [location, navigate, username]);
 
   //const aluno = alunosData.alunos.find((aluno) => aluno.nome === username.trim());
 
