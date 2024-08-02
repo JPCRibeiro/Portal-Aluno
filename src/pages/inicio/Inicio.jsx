@@ -20,6 +20,10 @@ export default function Inicio() {
     }
   }, [location, navigate, username]);
 
+  if (!username) {
+    return null; 
+  }
+
   //const aluno = alunosData.alunos.find((aluno) => aluno.nome === username.trim());
 
   return (
