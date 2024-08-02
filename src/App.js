@@ -6,16 +6,18 @@ import Inicio from "./pages/inicio/Inicio";
 import Requerimento from "./pages/requerimento/Requerimento";
 import Biblioteca from "./pages/biblioteca/Biblioteca";
 import Boletim from "./pages/boletim/Boletim";
+import NotFound from './pages/not-found/NotFound';
 
 export default function App() {
   return (
     <Router>
-        <Routes basename="/Portal">
-          <Route exact path="/Portal" element={<Login/>}/>
-          <Route path="/Portal/inicio" element={<Inicio/>}/>
-          <Route path="/Portal/boletim" element={<Boletim/>}/>
-          <Route path="/Portal/requerimento" element={<Requerimento/>}/>
-          <Route path="/Portal/biblioteca" element={<Biblioteca/>}/>
+        <Routes basename="/login">
+          <Route exact path="/login" element={<Login/>}/>
+          <Route path="/" element={<Inicio/>}/>
+          <Route path="/boletim" element={<Boletim/>}/>
+          <Route path="/requerimento" element={<Requerimento/>}/>
+          <Route path="/biblioteca" element={<Biblioteca/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
     </Router>
   );

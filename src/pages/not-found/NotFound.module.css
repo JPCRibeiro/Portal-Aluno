@@ -1,0 +1,45 @@
+.container {
+  min-height: 100svh;
+  display: grid;
+  grid-template-areas:
+    'sidenav header'
+    'sidenav main'
+    'sidenav footer';
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #c7cbd1;
+}
+
+.mainWrapper {
+  text-align: center;
+}
+
+.mainWrapper h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #31404e;
+}
+
+.mainWrapper p {
+  font-size: 26px;
+  color: #31404e;
+}
+
+.mainWrapper a {
+  width: fit-content;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  background-color: #31404e;
+  color: white;
+  margin: 30px auto 0;
+  border-radius: 999px;
+  font-size: 22px;
+}

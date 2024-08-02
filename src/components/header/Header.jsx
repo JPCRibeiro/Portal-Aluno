@@ -15,11 +15,11 @@ export default function Header() {
           <AccountIcon sx={{ fontSize: 40 }} />
           <span>{username}</span>
         </div>
-        <Link to="/Portal/inicio" className={styles.logo}>
+        <Link to="/" className={styles.logo}>
           <img src={logo} alt="logo" width="40" />
           <span>Portal do Aluno</span>
         </Link>
-        <Link title='Sair' to="/Portal">
+        <Link title='Sair' to="/login">
             <span>Sair</span>
             <LogoutIcon sx={{ fontSize: 30 }} />
         </Link>
