@@ -22,7 +22,7 @@ export default function Sidenav() {
           <button onClick={toggle}>{clicked ? <CloseIcon sx={{ fontSize: 30 }}/> : <MenuIcon sx={{ fontSize: 30 }}/>}</button>
         </div>
         <ul>
-          <Link title="Início" to='/'>
+          <Link title="Início" to='/inicio'>
             <HomeIcon sx={{ fontSize: 30 }}/>
             <span style={{ display: clicked ? 'block' : 'none' }}>Página Inicial</span>
           </Link>

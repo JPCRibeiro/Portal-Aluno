@@ -63,7 +63,7 @@ export default function Login() {
   const handleLogin = () => {
     if (validateForm()) {
       localStorage.setItem("username", username);
-      navigate("/");
+      navigate("/login");
     }
   };
 

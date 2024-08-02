@@ -15,7 +15,7 @@ export default function Header() {
           <AccountIcon sx={{ fontSize: 40 }} />
           <span>{username}</span>
         </div>
-        <Link to="/" className={styles.logo}>
+        <Link to="/inicio" className={styles.logo}>
           <img src={logo} alt="logo" width="40" />
           <span>Portal do Aluno</span>
         </Link>
