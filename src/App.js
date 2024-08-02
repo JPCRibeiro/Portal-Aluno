@@ -14,6 +14,7 @@ export default function App() {
         <Routes basename="/login">
           <Route exact path="/login" element={<Login/>}/>
           <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/inicio" element={<Inicio/>}/>
           <Route path="/boletim" element={<Boletim/>}/>
           <Route path="/requerimento" element={<Requerimento/>}/>
           <Route path="/biblioteca" element={<Biblioteca/>}/>
